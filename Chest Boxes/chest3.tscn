@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://boigpc5yme45w"]
+
+[ext_resource type="PackedScene" uid="uid://bek1mn7huwdjr" path="res://Chest Boxes/chest.tscn" id="1_qecl3"]
+
+[node name="Chest" instance=ExtResource("1_qecl3")]
+
+[node name="Label" parent="PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "You landed on a Community Chest!
+You helped a grandma cross the street.
+Receive $500 from the Bank."
+
+[node name="Button" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer" index="0"]
+text = "Take $500."

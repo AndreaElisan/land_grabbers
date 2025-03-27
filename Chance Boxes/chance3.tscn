@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://r3rt68ttwx4m"]
+
+[ext_resource type="PackedScene" uid="uid://cxwkorpo47y" path="res://Chance Boxes/chance.tscn" id="1_bnep7"]
+
+[node name="Chance" instance=ExtResource("1_bnep7")]
+
+[node name="Label" parent="PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "You landed on a Chance!
+Your services to the local library has paid off.
+Receive $30 each from all Players."
+
+[node name="Button" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer" index="0"]
+text = "Take $30 each."

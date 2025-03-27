@@ -1,0 +1,274 @@
+[gd_scene load_steps=13 format=3 uid="uid://0jccoh281pe8"]
+
+[ext_resource type="Script" uid="uid://7o2xr57two1" path="res://Main.gd" id="1_jwdre"]
+[ext_resource type="Texture2D" uid="uid://bw2ijay1sgf42" path="res://Art/yellow_piece.png" id="1_mbgf4"]
+[ext_resource type="PackedScene" uid="uid://l2yh2bdjq64q" path="res://Chest Boxes/chest2.tscn" id="2_g3g6i"]
+[ext_resource type="Texture2D" uid="uid://cq7wi7wy74ni" path="res://Art/land grabbers.jpg" id="2_uhgic"]
+[ext_resource type="PackedScene" uid="uid://bek1mn7huwdjr" path="res://Chest Boxes/chest.tscn" id="3_o2k0o"]
+[ext_resource type="PackedScene" uid="uid://cxwkorpo47y" path="res://Chance Boxes/chance.tscn" id="4_b7yjr"]
+[ext_resource type="PackedScene" uid="uid://boigpc5yme45w" path="res://Chest Boxes/chest3.tscn" id="4_e0ekl"]
+[ext_resource type="PackedScene" uid="uid://2xddflu3o5s0" path="res://dice.tscn" id="4_u40vk"]
+[ext_resource type="PackedScene" uid="uid://ccmm1iwa50l68" path="res://Chance Boxes/chance2.tscn" id="5_4g85u"]
+[ext_resource type="PackedScene" uid="uid://pq2w0uflmn4u" path="res://spot.tscn" id="5_g3g6i"]
+[ext_resource type="PackedScene" uid="uid://r3rt68ttwx4m" path="res://Chance Boxes/chance3.tscn" id="6_4g85u"]
+[ext_resource type="Theme" uid="uid://dpr5fyyprsinv" path="res://DefaultTheme.tres" id="12_1b43j"]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("game_spaces")]
+script = ExtResource("1_jwdre")
+game_spaces = [NodePath("Spots/Start"), NodePath("Spots/Start2"), NodePath("Spots/Start3"), NodePath("Spots/Start4"), NodePath("Spots/Start5"), NodePath("Spots/Start6"), NodePath("Spots/Start7"), NodePath("Spots/Start8"), NodePath("Spots/Start9"), NodePath("Spots/Start10"), NodePath("Spots/Start11"), NodePath("Spots/Start12"), NodePath("Spots/Start13"), NodePath("Spots/Start14"), NodePath("Spots/Start15"), NodePath("Spots/Start16"), NodePath("Spots/Start17"), NodePath("Spots/Start18"), NodePath("Spots/Start19"), NodePath("Spots/Start20"), NodePath("Spots/Start21"), NodePath("Spots/Start22"), NodePath("Spots/Start23"), NodePath("Spots/Start24"), NodePath("Spots/Start25"), NodePath("Spots/Start26"), NodePath("Spots/Start27"), NodePath("Spots/Start28"), NodePath("Spots/Start29"), NodePath("Spots/Start30"), NodePath("Spots/Start31"), NodePath("Spots/Start32"), NodePath("Spots/Start33"), NodePath("Spots/Start34"), NodePath("Spots/Start35"), NodePath("Spots/Start36"), NodePath("Spots/Start37"), NodePath("Spots/Start38"), NodePath("Spots/Start39"), NodePath("Spots/Start40"), NodePath("Spots/StartJail")]
+chest_boxes = Array[PackedScene]([ExtResource("2_g3g6i"), ExtResource("3_o2k0o"), ExtResource("4_e0ekl")])
+chance_boxes = Array[PackedScene]([ExtResource("4_b7yjr"), ExtResource("5_4g85u"), ExtResource("6_4g85u")])
+
+[node name="LandGrabbers" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("2_uhgic")
+
+[node name="YellowPiece" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(920, 636)
+scale = Vector2(0.0546875, 0.0546876)
+texture = ExtResource("1_mbgf4")
+
+[node name="Spots" type="Node" parent="."]
+
+[node name="Start" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 636)
+gizmo_extents = 58.0
+
+[node name="Start2" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(844, 636)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start3" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(793, 636)
+gizmo_extents = 25.0
+
+[node name="Start4" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(742, 636)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start5" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(691, 636)
+gizmo_extents = 25.0
+direction = 5
+
+[node name="Start6" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(641, 636)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start7" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(590, 636)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start8" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(539, 636)
+gizmo_extents = 25.0
+direction = 4
+
+[node name="Start9" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(488, 636)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start10" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(437, 636)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start11" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(347, 653)
+gizmo_extents = 25.0
+
+[node name="StartJail" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(375, 626)
+gizmo_extents = 25.0
+direction = 6
+
+[node name="Start12" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 564)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start13" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 513)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start14" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 462)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start15" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 411)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start16" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 361)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start17" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 310)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start18" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 259)
+gizmo_extents = 25.0
+direction = 5
+
+[node name="Start19" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 208)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start20" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 158)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start21" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(362, 81)
+gizmo_extents = 55.0
+
+[node name="Start22" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(437, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start23" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(488, 81)
+gizmo_extents = 25.0
+direction = 5
+
+[node name="Start24" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(538, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start25" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(589, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start26" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(641, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start27" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(692, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start28" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(742, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start29" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(793, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start30" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(843, 81)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start31" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 81)
+gizmo_extents = 55.0
+direction = 6
+
+[node name="Start32" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 157)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start33" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 208)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start34" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 259)
+gizmo_extents = 25.0
+direction = 4
+
+[node name="Start35" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 310)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start36" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 361)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start37" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 412)
+gizmo_extents = 25.0
+direction = 4
+
+[node name="Start38" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 463)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Start39" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 514)
+gizmo_extents = 25.0
+
+[node name="Start40" parent="Spots" instance=ExtResource("5_g3g6i")]
+position = Vector2(920, 563)
+gizmo_extents = 25.0
+direction = 3
+
+[node name="Dice" parent="." instance=ExtResource("4_u40vk")]
+position = Vector2(797, 203)
+scale = Vector2(1.54688, 1.54688)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_left = 57.0
+offset_top = 30.0
+offset_right = 256.0
+offset_bottom = 121.0
+theme = ExtResource("12_1b43j")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("12_1b43j")
+text = "Properties Owned"
+horizontal_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Score Label" type="Label" parent="CanvasLayer"]
+offset_left = 53.0
+offset_top = 81.0
+offset_right = 248.0
+offset_bottom = 111.0
+theme = ExtResource("12_1b43j")
+text = "0"
+horizontal_alignment = 1
+
+[connection signal="dice_has_rolled" from="Dice" to="." method="_on_dice_dice_has_rolled"]

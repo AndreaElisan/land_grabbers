@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://l2yh2bdjq64q"]
+
+[ext_resource type="PackedScene" uid="uid://bek1mn7huwdjr" path="res://Chest Boxes/chest.tscn" id="1_3rpvb"]
+
+[node name="Chest" instance=ExtResource("1_3rpvb")]
+
+[node name="Label" parent="PanelContainer/MarginContainer/VBoxContainer" index="0"]
+text = "You landed on a Community Chest!
+Receive $40 from all Players each."
+
+[node name="Button" parent="PanelContainer/MarginContainer/VBoxContainer/MarginContainer/HBoxContainer" index="0"]
+text = "Take $40 each."
